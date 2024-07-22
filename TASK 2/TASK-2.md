@@ -22,7 +22,7 @@ Langkah-langkah setup dbt:
 
 ![alt text](image.png)
 
-## 7. Simpan packages DBT yang terinstall ke dalam file requirements.txt
+## 7. Simpan list packages DBT ke dalam file requirements.txt
  `pip freeze | grep dbt >> requirements.txt`
 
 ![alt text](image-1.png)
