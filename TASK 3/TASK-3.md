@@ -94,6 +94,11 @@ models:
 ![alt text](image-9.png)
 
 #### 11. Run dan test model
+```
+cd my_project
+dbt run
+dbt test
+```
 
 
 
