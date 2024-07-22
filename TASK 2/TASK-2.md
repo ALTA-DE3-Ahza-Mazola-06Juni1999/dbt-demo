@@ -2,7 +2,7 @@
 
 Langkah-langkah setup dbt:
 
-### 1. buat venv
+ 1. buat venv
 `python3 -m venv .venv`
 
 ## 2. Masuk ke dalam venv
