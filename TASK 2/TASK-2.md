@@ -36,9 +36,12 @@ Langkah-langkah setup dbt:
 Secara default, DBT akan menbuat sebuah dbt profile di home directory `~/.dbt/profiles.yml`
 
 untuk membuat dbt-profile direktori baru, kita bisa menjalankan:
-> mkdir dbt-profiles
->touch dbt-profiles/profiles.yml
->export DBT_PROFILES_DIR=$(pwd)/dbt-profiles
+```mkdir dbt-profiles
+
+touch dbt-profiles/profiles.yml
+
+export DBT_PROFILES_DIR=$(pwd)/dbt-profiles
+```
 
 
 #### 9. 
