@@ -1,33 +1,44 @@
-#### TASK 3 
+## TASK 3 
 
 Langkah-langkah setup dbt:
 
- 1. buat venv
+ #### 1. buat venv
 `python3 -m venv .venv`
 
-2. Masuk ke dalam venv
+#### 2. Masuk ke dalam venv
 `source .venv/bin/activate`
 
-4. Jalankan docker 
+#### 4. Jalankan docker 
 `docker compose up`
 
 ![alt text](<docker compose up .png>)
 
-5. Install dbt-postgres
+#### 5. Install dbt-postgres
 `pip install dbt-postgres`
+
 ![alt text](<install dbt-postgres.png>)
 
-6. Melihat packages DBT apa saja yang sudah terinstall
+#### 6. Melihat packages DBT apa saja yang sudah terinstall
 `pip freeze| grep dbt`
 
 ![alt text](image.png)
 
-7. Simpan list packages DBT ke dalam file requirements.txt
+#### 7. Simpan list packages DBT ke dalam file requirements.txt
  `pip freeze | grep dbt >> requirements.txt`
 
 ![alt text](image-1.png)
 
-8. Setup DBT project
+#### 8. Setup DBT project
 `dbt init my_project`
 
 ![alt text](image-2.png)
+
+Secara default, DBT akan menbuat sebuah dbt profile di home directory `~/.dbt/profiles.yml`
+
+untuk membuat dbt-profile direktori baru, kita bisa menjalankan:
+`mkdir dbt-profiles`
+`touch dbt-profiles/profiles.yml`
+`export DBT_PROFILES_DIR=$(pwd)/dbt-profiles`
+
+
+#### 9. 
