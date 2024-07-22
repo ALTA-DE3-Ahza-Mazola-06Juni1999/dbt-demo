@@ -57,5 +57,21 @@ touch dbt-profiles/profiles.yml
 
 export DBT_PROFILES_DIR=$(pwd)/dbt-profiles
 ```
+![alt text](image-3.png)
 
-#### 9. 
+#### 9. pastikan models di dbt_project.yml terlihat seperti ini:
+```
+models:
+  my_project:
+    # Config indicated by + and applies to all files under models/example/
+    store:
+      +schema: public
+      +database: store
+    store_analytics:
+      +materialized: table
+      +schema: analytics
+      +database: store
+
+``` 
+![alt text](image-4.png)
+
