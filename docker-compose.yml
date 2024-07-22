@@ -10,7 +10,7 @@ services:
     labels:
       - "com.citusdata.role=Master"
     environment: &AUTH
-      - POSTGRES_PASSWORD=pass
+      - POSTGRES_PASSWORD=pass 
       - POSTGRES_USER=postgres
       - POSTGRES_DB=store
       - PGUSER=postgres
