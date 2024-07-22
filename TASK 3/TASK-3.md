@@ -59,7 +59,9 @@ export DBT_PROFILES_DIR=$(pwd)/dbt-profiles
 ```
 ![alt text](image-3.png)
 
-#### 9. pastikan models di dbt_project.yml terlihat seperti ini:
+#### 9. Setup DBT project congfiguration
+
+pastikan models di dbt_project.yml terlihat seperti ini:
 ```
 models:
   my_project:
@@ -74,4 +76,26 @@ models:
 
 ``` 
 ![alt text](image-4.png)
+
+#### 10. Membuat model baru
+- buat direktori store_analytic di dalam direktori models `mkdir store_analytic`
+`touch store_analytic/schema.yml`
+
+![alt text](image-5.png)
+
+- Kemudian definisikan `schema.yml`
+
+![alt text](image-6.png)
+
+- Kemudian definisikan tabel dengan menambah file `daily_sales.sql` di dalam direktori yang sama.
+
+![alt text](image-7.png)
+
+![alt text](image-9.png)
+
+#### 11. Run dan test model
+
+
+
+
 
