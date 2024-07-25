@@ -1,0 +1,21 @@
+### Task 4
+1. Make a model named on `stg_order_details` containing the following info:
+    - order_date
+    - quantity
+    - price
+    - brand name
+    - product name
+
+2. Base on `stg_order_details`, make another model named `fct_per_brand_daily_sales` containing per brand daily sales:
+    - brand_name
+    - order_date
+    - total_quantity
+    - total_revenue
+
+3. Add test to make sure that `fct_per_brand_daily_sales` has `unique combination` of `order_date` and `brand_name`
+
+** 
+1. buat file packages.yml
+
+![alt text](<Screenshot 2024-07-23 104431.png>)
+
